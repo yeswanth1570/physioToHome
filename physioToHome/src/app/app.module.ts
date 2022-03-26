@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { IonicModule } from '@ionic/angular';
+import { HomeModule } from 'src/pages/home/home.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    IonicModule
-  ],
+    IonicModule,
+    HomeModule,
+    NgbModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
