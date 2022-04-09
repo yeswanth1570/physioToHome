@@ -8,6 +8,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { IonicModule } from '@ionic/angular';
 import { HomeModule } from 'src/pages/home/home.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSliderModule,
     IonicModule,
     HomeModule,
-    NgbModule
-    ],
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule   ],
   providers: [],
   bootstrap: [AppComponent]
 })

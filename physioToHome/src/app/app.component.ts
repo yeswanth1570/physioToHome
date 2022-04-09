@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
 ngOnInit(): void {
  
 }
-
+inputString=''
+result:any = ''
 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
@@ -41,4 +42,6 @@ onSlide(slideEvent: NgbSlideEvent) {
     this.togglePaused();
   }
 }
+
+
 }
